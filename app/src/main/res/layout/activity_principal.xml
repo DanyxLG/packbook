@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo"
+    tools:context="com.example.juanm.packbooks.principal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="PANEL DE CONTROL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/textView2"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="206dp"
+                android:layout_height="191dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:src="@drawable/packbooksv3" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.26">
+
+                <Button
+                    android:text="Subir libro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#445500"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="3dp"
+                    android:id="@+id/principal_subir_BT"
+                    android:onClick="subir_libro"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Acerca de"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#445500"
+                    android:textColor="#ffffff"
+                    android:onClick="Acerca_de"
+                    android:id="@+id/principal_acerca_BT"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalLAy">
+
+                <Button
+                    android:id="@+id/principal_publicos_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.16"
+                    android:background="#445500"
+                    android:onClick="descargarLibros"
+                    android:text="Descargar libros"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/principal_privados_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.16"
+                    android:background="#445500"
+                    android:onClick="eliminarLibros"
+                    android:text="Eliminar un libro"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cuentaLY">
+
+                <Button
+                    android:id="@+id/principal_cuenta_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.20"
+                    android:background="#445500"
+                    android:onClick="verCuenta"
+                    android:text="Mi cuenta"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/principal_cerrar_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.17"
+                    android:background="@android:color/holo_red_dark"
+                    android:onClick="cerrarSesion"
+                    android:text="Cerrar sesión"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

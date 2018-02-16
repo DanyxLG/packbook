@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo"
+    tools:context="com.example.juanm.packbooks.Recuperar">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="RECUPERAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/textView2"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/packbooksv3"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/recuperar_correo_ET"
+                android:hint="Correo"
+                android:inputType="textEmailSubject|textWebEmailAddress"
+                android:layout_below="@+id/imageView1"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/recuperar_token_ET"
+                android:hint="Token de recuperación"
+                android:layout_below="@+id/imageView1"
+                android:layout_alignParentStart="true"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/recuperar_Contrasena_ET"
+                android:hint="Nueva contraseña" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/recuperar_repContra_ET"
+                android:hint="Repetir nueva contraseña" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/recuperar_recuperar_BT"
+                android:background="#445500"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:text="Recuperar"
+                android:onClick="recuperarCuenta"
+                android:layout_below="@+id/button"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

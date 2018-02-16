@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo"
+    tools:context="com.example.juanm.packbooks.bajarLibros">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Búsqueda de libros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/textView2"
+                android:layout_marginBottom="12dp"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/param_libro"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginRight="5dp"
+                    android:hint="Buscar.."
+                    android:inputType="textPersonName" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Categoría" />
+
+                    <Spinner
+                        android:id="@+id/bajar_categoria_SP"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bajar_publicos_BT"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="9px"
+                android:background="#445500"
+                android:onClick="Buscar_publicos"
+                android:text="En públicos"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bajar_privados_BT"
+                android:layout_marginTop="9px"
+                android:background="#945400"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:onClick="Buscar_privados"
+                android:text="En privados"/>
+
+        </LinearLayout>
+
+            <ListView
+                android:id="@+id/lista_libros"
+                android:layout_width="match_parent"
+                android:layout_height="329dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="168dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

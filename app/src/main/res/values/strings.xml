@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PACKBOOKS</string>
+    <string-array name="Categorias">
+        <item>Todas</item>
+        <item>Policial</item>
+        <item>Romantica</item>
+        <item>Terror</item>
+        <item>Ciencia Ficcion</item>
+        <item>Investigacion</item>
+        <item>Biografico</item>
+        <item>Infantil</item>
+        <item>Autoayuda</item>
+        <item>Erotico</item>
+        <item>Hogar</item>
+        <item>Encicplopedia/manual</item>
+        <item>Politica</item>
+        <item>Economico</item>
+        <item>Sociedad</item>
+        <item>Deportes</item>
+        <item>Cultura</item>
+        <item>Educacion</item>
+    </string-array>
+    <string-array name="Tipo">
+        <item>Publico</item>
+        <item>Privado</item>
+    </string-array>
+</resources>
+
